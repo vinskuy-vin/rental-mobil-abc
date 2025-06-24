@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Mobil - Perusahaan ABC</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Rental Mobil ABC</h1>
+            <p>Sewa mobil mudah dan cepat</p>
+        </header>
+
+        <main>
+            <div class="car-list">
+                <h2>Daftar Mobil Tersedia</h2>
+                <div class="cars-container" id="carsContainer">
+                    <!-- Mobil akan ditambahkan via JavaScript -->
+                </div>
+            </div>
+
+            <div class="customer-form">
+                <h2>Formulir Pelanggan</h2>
+                <form id="rentalForm">
+                    <div class="form-group">
+                        <label for="customerName">Nama Pelanggan:</label>
+                        <input type="text" id="customerName" required>
+                    </div>
+                    <button type="button" id="calculateBtn">Hitung Total</button>
+                </form>
+            </div>
+
+            <div class="summary">
+                <h2>Ringkasan Sewa</h2>
+                <div id="summaryContent"></div>
+                <button type="button" id="saveBtn" disabled>Simpan Pemesanan</button>
+            </div>
+
+            <div class="order-history">
+                <h2>Riwayat Pemesanan</h2>
+                <div id="orderHistory"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
